@@ -42,6 +42,17 @@ namespace MyTaskAPI.Controllers
 
             };
             todos.Add(todo2);
+            var todo3 = new Todo
+            {
+                Id = 3,
+                Title = "Take a bath",
+                Description = "Take a bath",
+                Created = DateTime.Now,
+                Due = DateTime.Now.AddDays(5),
+                Status = TodoStatus.Completed
+
+            };
+            todos.Add(todo3);
             return todos;
         }
     }
